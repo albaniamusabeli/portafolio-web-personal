@@ -68,6 +68,21 @@
     {% block content %}
     {% endblock %}
 
+
+    <!-- Etiqueta hr: Mostrar en los path about, portfolio y contact -->
+  
+    {% if request.path == '/about/' or request.path == '/portfolio/' or request.path == '/contact/' %}
+    <hr>
+    {% endif %}
+
+    <!-- Tambien puede ser así:
+      
+    {% if request.path != '/' %}
+    <hr>
+    {% endif %}
+    -->
+  
+
     
     <!-- Pie de página -->
     <footer>
