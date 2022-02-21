@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Para no agregar carpeta media con las imagenes
+/media
