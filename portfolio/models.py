@@ -9,6 +9,7 @@ class Project(models.Model):
     titulo = models.CharField(max_length=200)
     descripcion = models.TextField(max_length=500)
     imagen = models.ImageField(upload_to = 'Projects')
+    url = models.URLField(null=True, blank=True)
     fechaCreacion = models.DateTimeField(auto_now_add=True)
     fechaActualizacion = models.DateTimeField(auto_now=True)
 
